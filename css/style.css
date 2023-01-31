@@ -33,9 +33,8 @@ body {
 
 h1 {
 
-    position: fixed;
-    top: 9%;
-    left: 1%;
+    position: relative;
+    top: 20%;
     font-size: 11pt;
     font-weight: bold;
 
@@ -46,7 +45,7 @@ header {
 
     position: fixed;
     margin-top: 2%;
-    margin-left: 75%;
+    margin-left: 0%;
     display: grid;
     z-index: 3;
     
@@ -65,7 +64,7 @@ header {
 
 .rectangle2 {
     position: fixed;
-    height: 60px;
+    height: 80px;
     width: 100vw;;
     background-color: #18172e;
     z-index: 1;
@@ -77,10 +76,14 @@ header {
     position: relative;
     width: 400px;
     height: 70px;
+    margin-left: 370%;
+    margin-top: 9.5%;
     border-radius: 10px;
     background: #3f5066;
     display: grid;
     place-content: center;
+    z-index: 3;
+
     
     
 
@@ -243,7 +246,38 @@ header {
 
 }
 
+.lists {
 
+    position: relative;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    
+
+}
+
+.links {
+
+    position: relative;
+    font-size: 1.5rem;
+    margin-right: 0.5%;
+   
+    
+
+}
+
+.blink {
+    transition: 0.5s;
+    border-radius: 26px;
+    
+    
+}
+
+.blink:hover{
+    background-color: #212b38;
+    
+    opacity: 0.5;
+}
 
 
 @keyframes transitionIn {
